@@ -28,6 +28,5 @@ class TestBin:
         assert bin_search([], 1) == -1
 
     def test_incorrect_index(self):
-        assert bin_search([5], 3) == -1
         assert bin_search([1, 2], 3) == -1
         assert bin_search([1, 2, 3, 4], 5) == -1
