@@ -1,4 +1,4 @@
-def binSearch(xs: list[int], x: int):
+def bin_search(xs: list[int], x: int):
     left, right = 0, len(xs) - 1
     while left < right:
         mid = (left + right) // 2
