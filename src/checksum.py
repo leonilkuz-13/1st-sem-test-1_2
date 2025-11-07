@@ -22,3 +22,18 @@ def modulo11_checksum(isbn_number: str):
     total += digits[-1]
 
     return total % 11 == 0
+
+
+print("Exit - -1")
+print("To enter, enter any number")
+string = input()
+while True:
+    print("enter ISBN_number or came out")
+    if string == "-1":
+        print("you came out")
+        break
+    string = input()
+    if modulo11_checksum(string):
+        print("correct")
+    else:
+        print("incorrect")
